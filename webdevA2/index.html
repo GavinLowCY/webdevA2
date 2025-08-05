@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="main.js" defer></script>
+    <title>Bees</title>
+</head>
+
+<body>
+    <h1>All About Bees</h1>
+    <div id="MainFlexBox">
+        <button class="HoverChange" id="MTB1">What are bees</button>
+        <button class="HoverChange" id="MTB2">Roles and species</button>
+        <button class="HoverChange" id="MTB3">The use of bees in nature</button>
+    </div>
+    <section class="Btext" id="BIntro">
+        <header>
+            <h3 class="MainHeader"> What are bees?</h3>
+        </header>
+        <article class="MainText">
+            <h4>&nbsp;</h4>
+            Bees are winged insects in the superfamily Apoidea with 20,000+ species. There are many roles that
+            certain bees are assigned to, such as queen bee and worker bees. They collect nectar from flowers and
+            unintentionally help pollinate flowers, making them a crucial part to maintaining the flora and fauna in
+            a sustainable ecosystem.
+        </article>
+        <figure>
+            <img src="images/HoneyHiveR.jpg" title="Bees in a hive">
+            <figcaption>Bees in a hive, by Ivan Marjanovic</figcaption>
+        </figure>
+
+
+
+    </section>
+
+    <section class="Btext" id="BSpeciesRoles">
+        <header>
+            <h3 class="MainHeader">What are some species of bees and their roles in the hive?</h3>
+        </header>
+        <article class="MainText">
+            <h4>&nbsp;</h4>
+            Some species are: Carpenter bees, Honey bees and Leafcutter bees. <br>
+            Some roles are queen bee and drone bees, which focuses on mating with each other for reproduction. Worker
+            bees, which can be further segregated into
+            more specific roles are primarily focused on maintaining the hive and production of honey.
+        </article>
+        <figure>
+            <img src="images/HoneyQueenBee.png" title="A queen Honey bee"><!--Picture of a Queen Honey Bee-->
+            <figcaption>A Queen honey bee, by Scott Bauer, USDA Agricultural Research Service</figcaption>
+        </figure>
+
+    </section>
+
+    <section class="Btext" id="BEcosystem">
+        <header>
+            <h3 class="MainHeader">How do bees help in sustaining the ecosystem?</h3>
+        </header>
+        <article class="MainText">
+            <h4>&nbsp;</h4>
+            Bees have the roles of a pollinator in the ecosystem. They help to pollinate the flowers while foraging for
+            nectar which will become honey.
+            This helps the flowers to reproduce which is a core part of an ecosystem, ensuring sustainability in the
+            ecosystem.
+        </article>
+        <figure>
+            <img src="images/PollinatingBeeR.jpg" title="A bee pollinating">
+            <figcaption>A bee pollinating a flower, by fir0002</figcaption>
+        </figure>
+
+
+    </section>
+
+    <h3 id="FactHeader">Did you know?</h3>
+    <div class="Btext" id="BFunFacts">
+        <button id="FCT1">Fact 1</button>
+        <button id="FCT2">Fact 2</button>
+        <button id="FCT3">Fact 3</button>
+        <div class="Share" id="F1T">
+            <span>
+                1. The honey that is produced by bees have about 17%-20% of water content, making it very difficult to
+                spoil due to
+                the lack of water for mold and other micro-organisms to live in it. However, its viscosity, is one of
+                the highest among
+                all organic liquids like oil, water, alcohol etc. <br>
+            </span>
+        </div>
+        <div class="Share" id="F2T">
+            <span>
+                2. Bees do a "Waggle Dance" that can communicate with other bees in the hive to tell others where food
+                can be found. The vibrations and sounds
+                produced by the quick flapping of their wings also help to communicate between each other. <br>
+            </span>
+        </div>
+        <div class="Share" id="F3T">
+            <span>
+                3. The hexagon tiles of a honeycomb in a beehive has Mathematics, Physics and Biology all in play. <br>
+                The layout of the hives uses Mathematics and Physics, while the heat dispersion in the hive uses
+                Biology.
+            </span>
+        </div>
+    </div>
+
+    <div id="Gameandfeedback">
+        <div id="Game">
+            <h3 class="minigame">Mini Game</h3>
+            <div id="Area">
+                <button id="Left">Left</button>
+                <button id="Right">Right</button>
+                <button id="spawnflower">Start</button>
+                <span id="scorecount"></span>
+                <div id="Gameboard">
+                    <img id="flower" src="images/Flower.png" alt="flower">
+                    <img id="beeingame" src="images/beegame.png" alt="beegame">
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="Feedbackdiv">
+            <h3 class="minigame">Your Feedback</h3>
+            <article class="Feedback">
+                <h4>&nbsp;</h4>
+                <div class="Feedback" id="Feedback-Text">
+                    Hi, I hoped you liked this webpage about bees and also increased your knowledge about them. Please
+                    fill in
+                    your input about
+                    how I can improve the site at the survey below.
+                </div>
+
+                <span class="Nochange">Your Name:  </span><input id="username" type="text"><br> 
+                <br>
+                <span id="Rating" class="Nochange"> How much did you enjoy the webpage? (1-5)</span> <br>
+                <input class="radiochecklist" type="radio" name="scale"> 1
+                <input class="radiochecklist" type="radio" name="scale"> 2
+                <input class="radiochecklist" type="radio" name="scale"> 3
+                <input class="radiochecklist" type="radio" name="scale"> 4
+                <input class="radiochecklist" type="radio" name="scale"> 5
+                <br> <!--Change-->
+                <br>
+                <span class="Nochange">Any feedbacks?</span><br><textarea id="Improve" rows="5"></textarea><br>
+
+
+                <button id="submit">Submit</button>
+                <p id="thankyou"></p>
+
+            </article>
+        </div>
+
+    </div>
+
+<footer>
+    <h3 id="qrtext">QR Code to this web</h3>
+    <img id="QRcode" src="images/qrcode_gavinlowcy.github.io.png" alt="Desktopqr">
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!--Use css sprites to make the fact buttons-->

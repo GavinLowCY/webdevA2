@@ -1,0 +1,314 @@
+
+/* CSS when in main page, no js */
+/* Bg no change,  */
+
+body{background:#c5c986}
+h1{text-align: center;color: #448ee4;}
+
+button{background: yellow;}
+span{background-color: burlywood;}
+article{background: #d09005;}
+
+
+
+h3,article,span{font-size: 1.5em; color:darkgreen}
+
+
+/* Button topic flex box */
+#MainFlexBox{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+   
+}
+#MTB1,#MTB2,#MTB3{
+    box-sizing: border-box;
+    flex:33%;
+    margin:3px;
+    height:6.5vh;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+figcaption{
+    margin:10px;
+    border:1px solid black ;
+    box-sizing: border-box;
+    text-align: center;
+
+    width:30%;
+    background-color: lightgreen;
+}
+
+/* flexbox column */
+/* change to grid */
+#BFunFacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    column-gap: 5px;
+
+    margin-bottom:10%;
+}
+
+/* buttons */
+
+#FCT1{
+    grid-row: 1/2;
+    grid-column:1/2;
+    margin-bottom: 5px;
+    text-align: center;
+    width:75%;
+    height:85%;
+    border-radius: 5px;
+    
+    
+}
+#FCT2{
+    grid-row:2/3;
+    grid-column:1/2;
+    margin-bottom: 5px;
+    text-align: center;
+    width:75%;
+    height:85%;
+    border-radius: 5px;
+    
+}
+#FCT3{
+    grid-row: 3/4;
+    grid-column:1/2;
+    margin-bottom: 5px;
+    text-align: center;
+    width:75%;
+    height:85%;
+    border-radius: 5px;
+
+    
+}
+
+.HoverChange{
+    transition: background-color 1s linear;
+    
+}
+
+.HoverChange:hover{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Share{
+    display:block;
+    width:75%;
+    height:25%;
+    
+background-color: burlywood;
+}
+
+/* Hover effect to make the buttons change colour and text to change font */
+.ChangeBg{
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#F1T{
+    grid-column:2/3;
+    grid-row:1/2;
+    
+}
+#F2T{
+    grid-column:2/3;
+    grid-row:2/3;
+    
+}
+#F3T{
+    grid-column: 2/3;
+    grid-row:3/4;
+
+}
+
+.Nochange{
+    background-color:transparent;
+}
+
+
+.MainHeader{
+    text-align: center;
+}
+
+#FactHeader{
+    font-size: 1.5em;
+    text-align:center;
+
+}
+.MainText{
+    border:1px solid black;
+    width:90%;
+    margin:5%;
+    
+}
+
+footer{
+    margin-top: 30%;
+    margin-right:20%;
+}
+
+#Gameandfeedback{
+    display:flex;
+    flex-direction: row;
+
+}
+
+#Feedbackdiv{
+    flex:1;
+    height:25%;
+    margin-right:5%;
+}
+
+
+#Game{
+    flex:2;
+    margin-left:5%;
+}
+
+
+.Feedback{
+    background-color: lightblue;
+    font-size: 1.15em;
+    border:3px dashed gold;
+}
+
+#Feedback-Text{
+    margin-bottom:10%;
+    margin-right:10%;
+    margin-left:5%;
+    border:none;
+}
+
+
+
+
+#Area{
+    background-color: darkblue;
+    width:50%;
+    height:125px;
+    border:2px dashed yellow;
+
+
+}
+
+.minigame{
+    text-align: center;
+}
+
+#Gameboard{
+    background-color: skyblue;
+
+    width:100%;
+    height:100px;
+    position:relative;
+}
+
+#flower,#beeingame{
+    position: absolute;
+}
+
+#flower{
+    
+    left:24px;
+
+}
+
+#beeingame{
+    
+    left:38px;
+}
+
+
+footer{margin-top:0px}
+
+
+
+
+@keyframes Flowerrotate{
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(45deg);}
+    40%{transform: rotate(-45deg);}
+    60%{transform: rotate(90deg);}
+    80%{transform: rotate(-90deg);}
+    100%{transform: rotate(0deg);}
+}
+
+#flower,.addedanim {animation: Flowerrotate 1s }
+/* No color design, change size */
+
+/* Change to */
+@media (max-width:800px){
+
+/* In mobile, main topic button should be in column flex */
+/* Mini game and feedback form should be in column flex */
+/* No change to the 2 column layout of the fun facts (i think cuz it is sort of responsive) */
+
+
+#MainFlexBox{
+    display:flex;
+    flex-direction: column;
+}
+
+#Gameandfeedback{
+    display:flex;
+    flex-direction: column;
+}
+
+#Area{
+    flex:1;
+}
+
+#Feedbackdiv{
+    flex:1;
+}
+
+/* Grid section which is the Fun facts */
+
+#BFunFacts{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+/* layout: */
+/* Fun Fact Button 1 */
+/* Fun Fact 1 */
+/* Fun Fact Button 2 */
+/* Fun Fact 2 */
+/* Fun Fact Button 3 */
+/* Fun Fact 3 */
+}
+
+#FCT1{
+    grid-row: 1/2;
+    grid-column: 1/1;
+}
+#F1T{
+    grid-row: 2/3;
+    grid-column: 1/1;
+}
+#FCT2{
+    grid-row: 3/4;
+    grid-column: 1/1;
+}
+#F2T{
+    grid-row:4/5;
+    grid-column:1/1;
+}
+#FCT3{
+    grid-row: 5/6;
+    grid-column:1/1;
+}
+#F3T{
+    grid-row: 6/7;
+    grid-column:1/1;
+}
+    
+
+
+#QRcode,#qrtext{display:none;}
+
+}
